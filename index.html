@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narmada Hospital - Maa Narmada Multi Speciality Hospital, Sehore</title>
+    <meta name="description" content="Maa Narmada Multi Speciality Hospital in Sehore offers advanced healthcare with compassion & excellence, 24x7 emergency care, expert doctors, pediatrics, gynecology, orthopedics, surgery, and modern inpatient facilities.">
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="imges/logo.png" alt="Narmada Hospital Logo" class="logo-img">
+                <div class="logo-text">
+                    <span class="brand-title">Narmada Hospital</span>
+                    <span class="brand-subtitle">Maa Narmada Multi Speciality Hospital</span>
+                </div>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#departments" class="nav-link">Specialities</a></li>
+                    <li><a href="#facilities" class="nav-link">Facilities</a></li>
+                    <li><a href="#gallery" class="nav-link">Hospital View</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container hero-container">
+            <!-- Left Column: Text & Actions -->
+            <div class="hero-content">
+                <span class="hero-pill">Multi Speciality Hospital, Sehore</span>
+                <h1 class="hero-title">Advanced Healthcare with Compassion &amp; Excellence</h1>
+                <p class="hero-subtext">Comprehensive medical treatments tailored for you</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Book Appointment</a>
+                    <a href="tel:9039502411" class="btn btn-outline">
+                        <i class="fa-solid fa-phone"></i> Call Now: 9039502411
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column: Building Photo Card (Slightly Shorter Height) -->
+            <div class="hero-image-col">
+                <div class="hero-card">
+                    <img src="imges/hero.png" alt="Maa Narmada Multi Speciality Hospital Building in Sehore" class="hero-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Who We Are</span>
+                <h2 class="section-title">About Maa Narmada Multi Speciality Hospital</h2>
+                <div class="section-title-line"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-image-wrapper">
+                    <img src="imges/hospital_interior.png" alt="Interior of Narmada Hospital" class="about-img" loading="lazy">
+                </div>
+                <div class="about-content">
+                    <h3 class="about-heading">Trusted Healthcare Partner in Sehore</h3>
+                    <p class="about-text">
+                        Narmada Hospital (Maa Narmada Multi Speciality Hospital) is a premier healthcare institution located in Sehore, Madhya Pradesh. Dedicated to patient-centric care, our hospital brings together skilled medical specialists, modern diagnostic equipment, and state-of-the-art facilities under one roof.
+                    </p>
+                    <p class="about-text">
+                        Our objective is to deliver accessible, affordable, and high-quality medical services to individuals and families in our community. Whether it is routine clinical consultations, surgical interventions, or round-the-clock emergency medical response, we are committed to keeping your health first.
+                    </p>
+                    <div class="about-bullets">
+                        <div class="bullet-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Comprehensive Multi-Speciality Departments</span>
+                        </div>
+                        <div class="bullet-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>24/7 Emergency & Trauma Response</span>
+                        </div>
+                        <div class="bullet-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Hygienic & Patient-Friendly Wards</span>
+                        </div>
+                        <div class="bullet-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>In-house Diagnostics & Pharmacy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialities / Departments Section -->
+    <section class="departments-section section-padding" id="departments">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Clinical Excellence</span>
+                <h2 class="section-title">Our Specialities</h2>
+                <p class="section-description">Comprehensive medical care tailored to your needs with expert attention and advanced technology.</p>
+                <div class="section-title-line"></div>
+            </div>
+            
+            <!-- Specialities Top Row (2 Columns) -->
+            <div class="specialities-two-col top-specialities">
+                <div class="speciality-item">
+                    <h3 class="speciality-title">CTVS (Cardio Thoracic &amp; Vascular Surgery)</h3>
+                    <p class="speciality-desc">Advanced surgical care for heart, chest, and vascular diseases including bypass surgery, valve replacement, congenital heart surgery, vascular procedures, and minimally invasive cardiac surgeries performed by experienced specialists.</p>
+                </div>
+                <div class="speciality-item">
+                    <h3 class="speciality-title">Cardiology &amp; Heart Care</h3>
+                    <p class="speciality-desc">Comprehensive diagnosis and treatment for heart diseases including hypertension, chest pain, heart failure, arrhythmia, angiography, angioplasty, and preventive cardiac care.</p>
+                </div>
+            </div>
+
+            <!-- Middle 2-Image Grid -->
+            <div class="specialities-image-grid">
+                <div class="spec-img-card">
+                    <img src="imges/spec1.jpg" alt="Speciality Care &amp; ICU Facilities at Narmada Hospital" class="spec-img">
+                </div>
+                <div class="spec-img-card">
+                    <img src="imges/spec2.png" alt="Speciality Patient Wards at Narmada Hospital" class="spec-img">
+                </div>
+            </div>
+
+            <!-- Specialities Main 2-Column Grid -->
+            <div class="specialities-two-col main-specialities">
+                <!-- Left Column -->
+                <div class="specialities-col">
+                    <div class="speciality-item">
+                        <h3 class="speciality-title">Oncology &amp; Cancer Care</h3>
+                        <p class="speciality-desc">Comprehensive cancer diagnosis, treatment, and supportive care with advanced medical technology and personalized treatment plans for various types of cancers.</p>
+                    </div>
+
+                    <div class="speciality-item">
+                        <h3 class="speciality-title">General Medicine</h3>
+                        <p class="speciality-desc">Expert treatment for fever, infections, diabetes, thyroid disorders, blood pressure, and other medical conditions.</p>
+                    </div>
+
+                    <div class="speciality-item">
+                        <h3 class="speciality-title">Emergency &amp; Trauma Care</h3>
+                        <p class="speciality-desc">Round-the-clock emergency services with rapid response and expert medical assistance.</p>
+                    </div>
+
+                    <div class="speciality-item">
+                        <h3 class="speciality-title">Orthopaedics</h3>
+                        <p class="speciality-desc">Specialized care for bone, joint, spine, arthritis, fractures, and sports injuries.</p>
+                    </div>
+
+                    <div class="speciality-item">
+                        <h3 class="speciality-title">Gastroenterology</h3>
+                        <p class="speciality-desc">Expert care for digestive system disorders including liver, stomach, pancreas, and intestinal diseases.</p>
+                    </div>
+
+                    <div class="speciality-item">
+                        <h3 class="speciality-title">Radiology &amp; Diagnostics</h3>
+                        <p class="speciality-desc">Modern diagnostic services including ECG, 2D Echo, Ultrasound, X-Ray, CT Scan, pathology, and laboratory services.</p>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="specialities-col">
+                    <div class="speciality-item">
+                        <h3 class="speciality-title">Neonatal &amp; Paediatric Care</h3>
+                        <p class="speciality-desc">Specialized healthcare services for newborns, infants, children, and adolescents including neonatal intensive care, vaccination, growth monitoring, and treatment for paediatric illnesses.</p>
+                    </div>
+
+                    <div class="speciality-item">
+                        <h3 class="speciality-title">Critical Care &amp; ICU</h3>
+                        <p class="speciality-desc">Advanced intensive care facilities with 24x7 monitoring and emergency support for critically ill patients.</p>
+                    </div>
+
+                    <div class="speciality-item">
+                        <h3 class="speciality-title">General &amp; Laparoscopic Surgery</h3>
+                        <p class="speciality-desc">Advanced surgical procedures using modern minimally invasive techniques for faster recovery and better outcomes.</p>
+                    </div>
+
+                    <div class="speciality-item">
+                        <h3 class="speciality-title">Neurology</h3>
+                        <p class="speciality-desc">Diagnosis and treatment for neurological disorders including stroke, migraine, epilepsy, and nerve-related conditions.</p>
+                    </div>
+
+                    <div class="speciality-item">
+                        <h3 class="speciality-title">Pulmonology &amp; Respiratory Care</h3>
+                        <p class="speciality-desc">Treatment for asthma, COPD, lung infections, and respiratory disorders.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section class="facilities section-padding" id="facilities">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Patient Comfort & Care</span>
+                <h2 class="section-title">Our Facilities</h2>
+                <p class="section-description">Modern infrastructure designed for safety, healing, and convenience.</p>
+                <div class="section-title-line"></div>
+            </div>
+
+            <!-- 3 Image Cards -->
+            <div class="facilities-grid">
+                <div class="facility-card">
+                    <div class="facility-img-wrapper">
+                        <img src="imges/img1.png" alt="Patient Wards at Narmada Hospital" class="facility-img" loading="lazy">
+                    </div>
+                    <div class="facility-content">
+                        <h3 class="facility-title">Private Patient Rooms</h3>
+                        <p class="facility-desc">Well-furnished private rooms with comfortable beds, clean interiors, and a calm environment for patient rest and quick recovery.</p>
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-img-wrapper">
+                        <img src="imges/hospital_ward_2.png" alt="Modern Beds at Narmada Hospital" class="facility-img" loading="lazy">
+                    </div>
+                    <div class="facility-content">
+                        <h3 class="facility-title">Modern Beds</h3>
+                        <p class="facility-desc">Equipped with adjustable medical beds, continuous monitoring, and emergency support call system.</p>
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-img-wrapper">
+                        <img src="imges/hospital_interior.png" alt="Clean Interiors at Narmada Hospital" class="facility-img" loading="lazy">
+                    </div>
+                    <div class="facility-content">
+                        <h3 class="facility-title">Clean Interiors</h3>
+                        <p class="facility-desc">Well-sanitized consultation areas and corridors maintained to strict hospital hygiene standards.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Essential Support Row -->
+            <div class="essential-services">
+                <h3 class="services-title">24/7 Essential Hospital Support</h3>
+                <div class="services-grid">
+                    <div class="service-box">
+                        <div class="service-icon"><i class="fa-solid fa-kit-medical"></i></div>
+                        <span class="service-name">24x7 Emergency</span>
+                    </div>
+                    <div class="service-box">
+                        <div class="service-icon"><i class="fa-solid fa-pills"></i></div>
+                        <span class="service-name">Pharmacy</span>
+                    </div>
+                    <div class="service-box">
+                        <div class="service-icon"><i class="fa-solid fa-flask"></i></div>
+                        <span class="service-name">Pathology Lab</span>
+                    </div>
+                    <div class="service-box">
+                        <div class="service-icon"><i class="fa-solid fa-ambulance"></i></div>
+                        <span class="service-name">Ambulance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section (First Card: Doctor Consultation Room; View More Option Included) -->
+    <section class="gallery-section section-padding bg-light" id="gallery">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Inside Our Hospital</span>
+                <h2 class="section-title">Hospital View</h2>
+                <p class="section-description">A glimpse into our world-class healthcare environment. Click any image to view full size.</p>
+                <div class="section-title-line"></div>
+            </div>
+
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- 1. Doctor Consultation Room (contects.png FIRST!) -->
+                <div class="gallery-card" data-img="imges/contects.png" data-title="Doctor Consultation Room">
+                    <div class="gallery-img-wrapper">
+                        <img src="imges/contects.png" alt="Doctor Consultation Room" class="gallery-img" loading="lazy">
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <span>View Full Image</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card-body">
+                        <h3 class="gallery-card-title">Doctor Consultation Room</h3>
+                    </div>
+                </div>
+
+                <!-- 2. Hospital Interior (hospital_interior.png) -->
+                <div class="gallery-card" data-img="imges/hospital_interior.png" data-title="Hospital Interior">
+                    <div class="gallery-img-wrapper">
+                        <img src="imges/hospital_interior.png" alt="Hospital Interior" class="gallery-img" loading="lazy">
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <span>View Full Image</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card-body">
+                        <h3 class="gallery-card-title">Hospital Interior</h3>
+                    </div>
+                </div>
+
+                <!-- 3. Patient Ward (hospital_ward.png) -->
+                <div class="gallery-card" data-img="imges/hospital_ward.png" data-title="Patient Ward">
+                    <div class="gallery-img-wrapper">
+                        <img src="imges/hospital_ward.png" alt="Patient Ward" class="gallery-img" loading="lazy">
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <span>View Full Image</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card-body">
+                        <h3 class="gallery-card-title">Patient Ward</h3>
+                    </div>
+                </div>
+
+                <!-- 4. Patient Room (hospital_ward_2.png) - Hidden initially -->
+                <div class="gallery-card gallery-card-hidden" data-img="imges/hospital_ward_2.png" data-title="Patient Room">
+                    <div class="gallery-img-wrapper">
+                        <img src="imges/hospital_ward_2.png" alt="Patient Room" class="gallery-img" loading="lazy">
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <span>View Full Image</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card-body">
+                        <h3 class="gallery-card-title">Patient Room</h3>
+                    </div>
+                </div>
+
+                <!-- 5. Private Suite (img1.png) - Hidden initially -->
+                <div class="gallery-card gallery-card-hidden" data-img="imges/img1.png" data-title="Private Suite">
+                    <div class="gallery-img-wrapper">
+                        <img src="imges/img1.png" alt="Private Suite" class="gallery-img" loading="lazy">
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <span>View Full Image</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card-body">
+                        <h3 class="gallery-card-title">Private Suite</h3>
+                    </div>
+                </div>
+
+                <!-- 6. Inpatient Care (img2.png) - Hidden initially -->
+                <div class="gallery-card gallery-card-hidden" data-img="imges/img2.png" data-title="Inpatient Medical Care">
+                    <div class="gallery-img-wrapper">
+                        <img src="imges/img2.png" alt="Inpatient Medical Care" class="gallery-img" loading="lazy">
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <span>View Full Image</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card-body">
+                        <h3 class="gallery-card-title">Inpatient Medical Care</h3>
+                    </div>
+                </div>
+
+                <!-- 7. Advanced Care (img3.png) - Hidden initially -->
+                <div class="gallery-card gallery-card-hidden" data-img="imges/img3.png" data-title="Advanced Critical Care">
+                    <div class="gallery-img-wrapper">
+                        <img src="imges/img3.png" alt="Advanced Critical Care" class="gallery-img" loading="lazy">
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <span>View Full Image</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card-body">
+                        <h3 class="gallery-card-title">Advanced Critical Care</h3>
+                    </div>
+                </div>
+
+                <!-- 8. Corridor (img4.png) - Hidden initially -->
+                <div class="gallery-card gallery-card-hidden" data-img="imges/img4.png" data-title="Hospital Corridor">
+                    <div class="gallery-img-wrapper">
+                        <img src="imges/img4.png" alt="Hospital Corridor" class="gallery-img" loading="lazy">
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <span>View Full Image</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card-body">
+                        <h3 class="gallery-card-title">Hospital Corridor</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View More Photos Button -->
+            <div class="gallery-view-more text-center" style="margin-top: 35px;">
+                <button id="view-more-btn" class="btn btn-outline">
+                    View More Photos <i class="fa-solid fa-chevron-down" style="margin-left: 6px;"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Lightbox Popup Modal -->
+    <div id="gallery-modal" class="gallery-modal" style="display: none;">
+        <button class="modal-close" id="modal-close" aria-label="Close Lightbox">&times;</button>
+        <div class="modal-content-box">
+            <img id="modal-img" class="modal-img" src="" alt="Enlarged Photo">
+            <div id="modal-caption" class="modal-caption"></div>
+        </div>
+    </div>
+
+    <!-- Contact Page / Section -->
+    <section class="contact-section section-padding" id="contact">
+        <div class="container">
+            <!-- Top Contact Grid -->
+            <div class="contact-top-grid">
+                <div class="contact-left-col">
+                    <h2 class="contact-page-title">Contact Us</h2>
+                    <p class="contact-page-subtitle">
+                        Reach out anytime for appointments, emergencies, or general inquiries.
+                    </p>
+                    <div class="contact-img-card">
+                        <img src="imges/contects.png?v=1" alt="Narmada Hospital Contact Reception & Interior" class="contact-interior-img" loading="lazy">
+                    </div>
+                </div>
+
+                <div class="contact-right-col">
+                    <form id="contact-appointment-form" class="contact-form" novalidate>
+                        <div class="contact-form-group">
+                            <label for="contact-name" class="contact-label">Full Name<span class="required-star">*</span></label>
+                            <input type="text" id="contact-name" name="name" class="contact-input" placeholder="Enter patient name" required>
+                            <span class="error-msg" id="contact-name-error"></span>
+                        </div>
+
+                        <div class="contact-form-group">
+                            <label for="contact-phone" class="contact-label">Phone Number<span class="required-star">*</span></label>
+                            <input type="tel" id="contact-phone" name="phone" class="contact-input" placeholder="Enter your 10-digit phone number" required>
+                            <span class="error-msg" id="contact-phone-error"></span>
+                        </div>
+
+                        <div class="contact-form-group">
+                            <label for="contact-date" class="contact-label">Appointment Date<span class="required-star">*</span></label>
+                            <input type="date" id="contact-date" name="date" class="contact-input" required>
+                            <span class="error-msg" id="contact-date-error"></span>
+                        </div>
+
+                        <button type="submit" class="btn-contact-submit">
+                            <i class="fa-brands fa-whatsapp" style="font-size: 1.1rem; margin-right: 6px;"></i> Book via WhatsApp
+                        </button>
+
+                        <p style="font-size: 0.82rem; color: #64748b; margin-top: 10px;">
+                            <i class="fa-solid fa-lock" style="color: #0284c7;"></i> Booking details will be sent directly to our WhatsApp numbers (9039502411 / 7803042639 / 9926294883).
+                        </p>
+
+                        <div id="contact-form-message" class="contact-message-box" style="display: none;"></div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Lower Location & Map Grid -->
+            <div class="location-grid">
+                <div class="location-info-col">
+                    <h3 class="location-heading">Location &amp; Details</h3>
+                    <div class="location-info-list">
+                        <div class="loc-item">
+                            <strong>PHONE &amp; BOOKING NUMBERS</strong>
+                            <p>
+                                <a href="tel:9039502411">+91 90395 02411</a> (Call &amp; Booking) &nbsp;|&nbsp; 
+                                <a href="tel:7803042639">+91 78030 42639</a> &nbsp;|&nbsp; 
+                                <a href="tel:9926294883">+91 99262 94883</a>
+                            </p>
+                        </div>
+                        <div class="loc-item">
+                            <strong>EMAIL ADDRESS</strong>
+                            <p><a href="mailto:hospitalmanarmada@gmail.com">hospitalmanarmada@gmail.com</a></p>
+                        </div>
+                        <div class="loc-item">
+                            <strong>HOSPITAL ADDRESS</strong>
+                            <p>New Bus Stand, Bhopal-Indore Road, Badiyakheri, Sehore - 466001, Madhya Pradesh</p>
+                        </div>
+                        <div class="loc-item">
+                            <strong>TIMINGS &amp; EMERGENCY</strong>
+                            <p>OPD Consultations &nbsp;|&nbsp; <strong>24x7 Emergency Response</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="location-map-col">
+                    <div class="contact-map-card">
+                        <div class="map-overlay-bar">
+                            <a href="https://www.google.com/maps?q=Narmada+Hospital+Sehore+Madhya+Pradesh" target="_blank" rel="noopener noreferrer" class="btn-open-maps">
+                                Open in Maps <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                        <iframe 
+                            title="Narmada Hospital Location Map"
+                            src="https://www.google.com/maps?q=Narmada+Hospital+Sehore+Madhya+Pradesh&output=embed" 
+                            width="100%" 
+                            height="240" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <p class="map-subtext text-center">Reach us anytime for medical emergencies</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+        <div class="container footer-content-wrapper">
+            <div class="footer-grid">
+                <!-- Column 1: Hospital Info -->
+                <div class="footer-col brand-col">
+                    <div class="footer-logo">
+                        <img src="imges/logo.png" alt="Narmada Hospital Logo" class="footer-logo-img">
+                        <div class="footer-logo-text">
+                            <span class="footer-title">Narmada Hospital</span>
+                            <span class="footer-subtitle">Maa Narmada Multi Speciality Hospital</span>
+                        </div>
+                    </div>
+                    <p class="footer-about-text">
+                        Delivering high quality, compassionate multi-speciality healthcare, 24x7 emergency response, modern wards, and expert medical consultants in Sehore.
+                    </p>
+                    <div class="footer-badges">
+                        <div class="footer-emergency-badge footer-booking-badge">
+                            <i class="fa-solid fa-phone-volume"></i> Booking &amp; Calling: <a href="tel:9039502411">+91 90395 02411</a>
+                        </div>
+                        <div class="footer-emergency-badge">
+                            <i class="fa-solid fa-truck-medical"></i> 24x7 Emergency: <a href="tel:7803042639">+91 78030 42639</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="footer-col">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                        <li><a href="#about"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+                        <li><a href="#departments"><i class="fa-solid fa-angle-right"></i> Specialities</a></li>
+                        <li><a href="#facilities"><i class="fa-solid fa-angle-right"></i> Facilities</a></li>
+                        <li><a href="#gallery"><i class="fa-solid fa-angle-right"></i> Hospital View</a></li>
+                        <li><a href="#contact"><i class="fa-solid fa-angle-right"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact & Booking -->
+                <div class="footer-col">
+                    <h3 class="footer-heading">Contact &amp; Booking</h3>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <strong>Call / Booking:</strong><br>
+                                <a href="tel:9039502411" class="footer-phone-highlight">+91 90395 02411</a><br>
+                                <a href="tel:7803042639">+91 78030 42639</a> &nbsp;|&nbsp; <a href="tel:9926294883">+91 99262 94883</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <strong>Email Address:</strong><br>
+                                <a href="mailto:hospitalmanarmada@gmail.com">hospitalmanarmada@gmail.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <strong>Address:</strong><br>
+                                <span>New Bus Stand, Bhopal-Indore Road, Badiyakheri, Sehore - 466001, M.P.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-instagram" style="color: #e1306c; font-size: 1.25rem;"></i>
+                            <div>
+                                <strong>Official Instagram:</strong><br>
+                                <a href="https://www.instagram.com/ma_narmada_hospital_sehore_mp?stkn=N3VpbXg0eTh2Z291" target="_blank" rel="noopener noreferrer" class="footer-insta-text-link">
+                                    @ma_narmada_hospital_sehore_mp
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2026. All rights reserved. Narmada Hospital (Maa Narmada Multi Speciality Hospital, Sehore)</p>
+                <div class="footer-social-wrapper">
+                    <a href="https://www.instagram.com/ma_narmada_hospital_sehore_mp?stkn=N3VpbXg0eTh2Z291" target="_blank" rel="noopener noreferrer" class="footer-insta-btn" aria-label="Visit Maa Narmada Hospital Instagram Profile">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>Follow Us on Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919039502411" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contact Narmada Hospital on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
