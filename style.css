@@ -1270,6 +1270,46 @@ ul {
 .footer-social-wrapper {
     display: flex;
     align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.footer-fb-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff;
+    background: #1877f2;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 0.86rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+    box-shadow: 0 4px 14px rgba(24, 119, 242, 0.35);
+}
+
+.footer-fb-btn:hover {
+    background: #166fe5;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(24, 119, 242, 0.55);
+    color: #ffffff;
+}
+
+.footer-fb-btn i {
+    font-size: 1.15rem;
+}
+
+.footer-fb-text-link {
+    color: #60a5fa !important;
+    font-weight: 600;
+    transition: var(--transition);
+    display: inline-block;
+}
+
+.footer-fb-text-link:hover {
+    color: #93c5fd !important;
+    text-decoration: underline;
 }
 
 .footer-insta-btn {
