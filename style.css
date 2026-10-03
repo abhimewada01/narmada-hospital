@@ -1251,6 +1251,22 @@ ul {
     gap: 15px;
 }
 
+.footer-bottom-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.developer-credit {
+    font-size: 0.83rem;
+    color: #94a3b8;
+}
+
+.developer-credit span {
+    color: #38bdf8;
+    font-weight: 600;
+}
+
 .footer-social-wrapper {
     display: flex;
     align-items: center;
