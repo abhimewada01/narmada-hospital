@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://maanarmadahospitalsehore.in/sitemap.xml
