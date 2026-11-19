@@ -275,6 +275,26 @@ ul {
     border-radius: 2px;
 }
 
+.nav-login-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--ms-blue);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    border-radius: var(--radius-sm);
+    transition: var(--transition);
+    box-shadow: 0 2px 8px rgba(0, 120, 212, 0.2);
+}
+
+.nav-login-btn:hover {
+    background-color: var(--ms-blue-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 120, 212, 0.3);
+}
+
 .hamburger {
     display: none;
     background: none;
@@ -1431,6 +1451,10 @@ ul {
     .footer-grid {
         grid-template-columns: 1fr;
         gap: 30px;
+    }
+
+    .nav-login-btn {
+        display: none;
     }
 
     .hamburger {
