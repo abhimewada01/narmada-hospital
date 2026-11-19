@@ -227,4 +227,113 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
+
+    /* ----------------------------------------------------------------------
+       6. Login/Signup Modal Handler
+       ---------------------------------------------------------------------- */
+    const navLoginBtn = document.getElementById('nav-login-btn');
+    const authModal = document.getElementById('auth-modal');
+    const authModalOverlay = document.getElementById('auth-modal-overlay');
+    const authModalClose = document.getElementById('auth-modal-close');
+    const authTabs = document.querySelectorAll('.auth-tab');
+    const loginForm = document.getElementById('login-form');
+    const signupForm = document.getElementById('signup-form');
+
+    // Open modal on login button click
+    if (navLoginBtn && authModal) {
+        navLoginBtn.addEventListener('click', function () {
+            authModal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        });
+    }
+
+    // Close modal functions
+    function closeAuthModal() {
+        if (authModal) {
+            authModal.style.display = 'none';
+            document.body.style.overflow = '';
+        }
+    }
+
+    // Close on close button click
+    if (authModalClose) {
+        authModalClose.addEventListener('click', closeAuthModal);
+    }
+
+    // Close on overlay click
+    if (authModalOverlay) {
+        authModalOverlay.addEventListener('click', closeAuthModal);
+    }
+
+    // Close on Escape key
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && authModal && authModal.style.display === 'flex') {
+            closeAuthModal();
+        }
+    });
+
+    // Tab switching
+    if (authTabs.length > 0) {
+        authTabs.forEach(function (tab) {
+            tab.addEventListener('click', function () {
+                const tabName = this.getAttribute('data-tab');
+                
+                // Update active tab
+                authTabs.forEach(function (t) {
+                    t.classList.remove('active');
+                });
+                this.classList.add('active');
+                
+                // Show/hide forms
+                if (tabName === 'login') {
+                    if (loginForm) loginForm.style.display = 'block';
+                    if (signupForm) signupForm.style.display = 'none';
+                } else {
+                    if (loginForm) loginForm.style.display = 'none';
+                    if (signupForm) signupForm.style.display = 'block';
+                }
+            });
+        });
+    }
+
+    // Login form submission
+    if (loginForm) {
+        loginForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('login-email').value;
+            const password = document.getElementById('login-password').value;
+            
+            if (email && password) {
+                alert('Login functionality will be connected to backend. Email: ' + email);
+                loginForm.reset();
+                closeAuthModal();
+            }
+        });
+    }
+
+    // Signup form submission
+    if (signupForm) {
+        signupForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('signup-name').value;
+            const email = document.getElementById('signup-email').value;
+            const phone = document.getElementById('signup-phone').value;
+            const password = document.getElementById('signup-password').value;
+            const confirmPassword = document.getElementById('signup-confirm-password').value;
+            
+            // Password validation
+            if (password !== confirmPassword) {
+                alert('Passwords do not match!');
+                return;
+            }
+            
+            if (name && email && phone && password) {
+                alert('Signup functionality will be connected to backend. Name: ' + name);
+                signupForm.reset();
+                closeAuthModal();
+            }
+        });
+    }
 });
